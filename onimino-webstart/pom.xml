@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>zeromeaner-parent</artifactId>
-		<groupId>org.zeromeaner</groupId>
+		<artifactId>onimino-parent</artifactId>
+		<groupId>org.onimino</groupId>
 		<version>1.1.3-SNAPSHOT</version>
-		<relativePath>../zeromeaner-parent</relativePath>
+		<relativePath>../onimino-parent</relativePath>
 	</parent>
-	<artifactId>zeromeaner-webstart</artifactId>
+	<artifactId>onimino-webstart</artifactId>
 
 	<build>
 		<plugins>
@@ -26,7 +26,7 @@
 								<inputTemplate>src/main/jnlp/zero.vm</inputTemplate>
 								<outputFile>zero.jnlp</outputFile>
 								<offlineAllowed>true</offlineAllowed>
-								<mainClass>org.zeromeaner.gui.reskin.StandaloneApplet</mainClass>
+								<mainClass>org.onimino.gui.reskin.StandaloneApplet</mainClass>
 								<allPermissions>true</allPermissions>
 							</jnlp>
 							<codebase>$${codebase}</codebase>
@@ -46,8 +46,8 @@
 			</dependency>
 		-->
 		<dependency>
-			<groupId>org.zeromeaner</groupId>
-			<artifactId>zeromeaner-core</artifactId>
+			<groupId>org.onimino</groupId>
+			<artifactId>onimino-core</artifactId>
 		</dependency>
 	</dependencies>
 

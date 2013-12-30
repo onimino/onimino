@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>zeromeaner-core</artifactId>
+	<artifactId>onimino-core</artifactId>
 
 	<properties>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
@@ -12,15 +12,15 @@
 			<resource>
 				<directory>src/main/resources</directory>
 				<excludes>
-					<exclude>org/zeromeaner/version.properties</exclude>
-					<exclude>org/zeromeaner/About.html</exclude>
+					<exclude>org/onimino/version.properties</exclude>
+					<exclude>org/onimino/About.html</exclude>
 				</excludes>
 			</resource>
 			<resource>
 				<directory>src/main/resources</directory>
 				<includes>
-					<include>org/zeromeaner/version.properties</include>
-					<include>org/zeromeaner/About.html</include>
+					<include>org/onimino/version.properties</include>
+					<include>org/onimino/About.html</include>
 				</includes>
 				<filtering>true</filtering>
 			</resource>
@@ -137,8 +137,8 @@
 			<version>0.9.9-RC1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.zeromeaner</groupId>
-			<artifactId>zeromeaner-laf</artifactId>
+			<groupId>org.onimino</groupId>
+			<artifactId>onimino-laf</artifactId>
 			<version>1.1.6-SNAPSHOT</version>
 		</dependency>
 		<dependency>
@@ -169,7 +169,7 @@
 		<profile>
 			<id>applet</id>
 			<build>
-				<finalName>zeromeaner</finalName>
+				<finalName>onimino</finalName>
 				<plugins>
 					<plugin>
 						<artifactId>maven-dependency-plugin</artifactId>
@@ -229,12 +229,12 @@
 									<goal>shade</goal>
 								</goals>
 								<configuration>
-									<finalName>zeromeaner-all-${project.version}-${maven.build.timestamp}</finalName>
+									<finalName>onimino-all-${project.version}-${maven.build.timestamp}</finalName>
 									<createDependencyReducedPom>false</createDependencyReducedPom>
 									<transformers>
 										<transformer
 											implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-											<mainClass>org.zeromeaner.gui.reskin.StandaloneMain</mainClass>
+											<mainClass>org.onimino.gui.reskin.StandaloneMain</mainClass>
 										</transformer>
 									</transformers>
 									<filters>
@@ -270,12 +270,12 @@
 									<goal>shade</goal>
 								</goals>
 								<configuration>
-									<finalName>zeromeaner-all-nomusic-${project.version}-${maven.build.timestamp}</finalName>
+									<finalName>onimino-all-nomusic-${project.version}-${maven.build.timestamp}</finalName>
 									<createDependencyReducedPom>false</createDependencyReducedPom>
 									<transformers>
 										<transformer
 											implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-											<mainClass>org.zeromeaner.gui.reskin.StandaloneMain</mainClass>
+											<mainClass>org.onimino.gui.reskin.StandaloneMain</mainClass>
 										</transformer>
 									</transformers>
 									<filters>
@@ -310,12 +310,12 @@
 									<goal>shade</goal>
 								</goals>
 								<configuration>
-									<finalName>zeromeaner-all-${project.version}</finalName>
+									<finalName>onimino-all-${project.version}</finalName>
 									<createDependencyReducedPom>false</createDependencyReducedPom>
 									<transformers>
 										<transformer
 											implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-											<mainClass>org.zeromeaner.gui.reskin.StandaloneMain</mainClass>
+											<mainClass>org.onimino.gui.reskin.StandaloneMain</mainClass>
 										</transformer>
 									</transformers>
 									<filters>
@@ -337,10 +337,10 @@
 		</profile>
 	</profiles>
 	<parent>
-		<groupId>org.zeromeaner</groupId>
-		<artifactId>zeromeaner-parent</artifactId>
+		<groupId>org.onimino</groupId>
+		<artifactId>onimino-parent</artifactId>
 		<version>1.1.6-SNAPSHOT</version>
-		<relativePath>../zeromeaner-parent</relativePath>
+		<relativePath>../onimino-parent</relativePath>
 	</parent>
 	<name>Zeromeaner Core</name>
 </project>

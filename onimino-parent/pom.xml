@@ -1,18 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.zeromeaner</groupId>
-	<artifactId>zeromeaner-parent</artifactId>
+	<groupId>org.onimino</groupId>
+	<artifactId>onimino-parent</artifactId>
 	<version>1.1.6-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>../zeromeaner-core</module>
-		<module>../zeromeaner-tuning</module>
-		<module>../zeromeaner-media</module>
-		<module>../zeromeaner-server</module>
-		<module>../zeromeaner-netstats</module>
-		<module>../zeromeaner-laf</module>
+		<module>../onimino-core</module>
+		<module>../onimino-tuning</module>
+		<module>../onimino-media</module>
+		<module>../onimino-server</module>
+		<module>../onimino-netstats</module>
+		<module>../onimino-laf</module>
 		
 	</modules>
 
@@ -42,8 +42,8 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.zeromeaner</groupId>
-				<artifactId>zeromeaner-core</artifactId>
+				<groupId>org.onimino</groupId>
+				<artifactId>onimino-core</artifactId>
 				<version>1.1.6-SNAPSHOT</version>
 			</dependency>
 			<dependency>

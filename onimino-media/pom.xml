@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>zeromeaner-parent</artifactId>
-		<groupId>org.zeromeaner</groupId>
+		<artifactId>onimino-parent</artifactId>
+		<groupId>org.onimino</groupId>
 		<version>1.1.6-SNAPSHOT</version>
-		<relativePath>../zeromeaner-parent</relativePath>
+		<relativePath>../onimino-parent</relativePath>
 	</parent>
-	<artifactId>zeromeaner-media</artifactId>
+	<artifactId>onimino-media</artifactId>
 
 	<build>
 		<plugins>
@@ -66,7 +66,7 @@
 									<includes>
 										<include>*.jar</include>
 									</includes>
-									<keystore>${project.basedir}/../zeromeaner-webstart-war/keystore</keystore>
+									<keystore>${project.basedir}/../onimino-webstart-war/keystore</keystore>
 									<alias>signFiles</alias>
 									<storepass>CasioF-2</storepass>
 								</configuration>
