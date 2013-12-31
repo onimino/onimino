@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>onimino-parent</artifactId>
 		<groupId>org.onimino</groupId>
-		<version>1.1.6-SNAPSHOT</version>
+		<version>0.1-SHAPSHOT</version>
 		<relativePath>../onimino-parent</relativePath>
 	</parent>
 	<artifactId>onimino-server</artifactId>
@@ -22,7 +22,7 @@
 		<dependency>
 			<groupId>org.onimino</groupId>
 			<artifactId>onimino-netstats</artifactId>
-			<version>1.1.6-SNAPSHOT</version>
+			<version>0.1-SHAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.rkutil.jdaemon</groupId>

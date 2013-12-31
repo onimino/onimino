@@ -139,7 +139,7 @@
 		<dependency>
 			<groupId>org.onimino</groupId>
 			<artifactId>onimino-laf</artifactId>
-			<version>1.1.6-SNAPSHOT</version>
+			<version>0.1-SHAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -339,7 +339,7 @@
 	<parent>
 		<groupId>org.onimino</groupId>
 		<artifactId>onimino-parent</artifactId>
-		<version>1.1.6-SNAPSHOT</version>
+		<version>0.1-SHAPSHOT</version>
 		<relativePath>../onimino-parent</relativePath>
 	</parent>
 </project>
