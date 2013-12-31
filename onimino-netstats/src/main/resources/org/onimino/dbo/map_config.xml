@@ -21,7 +21,7 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="org/zeromeaner/dbo/users.xml"/>
+		<mapper resource="org/onimino/dbo/users.xml"/>
 	</mappers>
 	
 </configuration>
