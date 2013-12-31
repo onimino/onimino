@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.javaApplet">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/zeromeaner-core/src/main/java/org/zeromeaner/gui/reskin/StandaloneApplet.java"/>
+<listEntry value="/zeromeaner-core/src/main/java/org/onimino/gui/reskin/StandaloneApplet.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>

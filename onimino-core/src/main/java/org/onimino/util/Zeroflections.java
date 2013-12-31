@@ -26,11 +26,11 @@ import org.reflections.Reflections;
 
 public class Zeroflections {
 	private static final Pattern ALL = Pattern.compile(".*");
-	private static final Pattern RULE = Pattern.compile("org/zeromeaner/config/rule/.*\\.rul");
+	private static final Pattern RULE = Pattern.compile("org/onimino/config/rule/.*\\.rul");
 	private static Reflections classes = Reflections.collect();
 	
 	private static List<String> list(String listName) {
-		InputStream rsrc = Zeroflections.class.getClassLoader().getResourceAsStream("org/zeromeaner/config/list/" + listName);
+		InputStream rsrc = Zeroflections.class.getClassLoader().getResourceAsStream("org/onimino/config/list/" + listName);
 		Sequence<String> lines = Sequences.lines(new InputStreamReader(rsrc));
 		return Sequences.sequencer(String.class, lines).list();
 	}

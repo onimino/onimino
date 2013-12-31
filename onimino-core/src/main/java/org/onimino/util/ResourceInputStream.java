@@ -62,7 +62,7 @@ public class ResourceInputStream extends FilterInputStream {
 				return new FileInputStream(localResource);
 		} catch(Throwable t) {
 		}
-		in = ResourceInputStream.class.getClassLoader().getResourceAsStream("org/zeromeaner/" + resource);
+		in = ResourceInputStream.class.getClassLoader().getResourceAsStream("org/onimino/" + resource);
 		if(in != null)
 			return in;
 //		throw new IOException("Resource not found:" + resource);
@@ -87,7 +87,7 @@ public class ResourceInputStream extends FilterInputStream {
 				return localResource.toURI().toURL();
 		} catch(Throwable t) {
 		}
-		in = ResourceInputStream.class.getClassLoader().getResource("org/zeromeaner/" + resource);
+		in = ResourceInputStream.class.getClassLoader().getResource("org/onimino/" + resource);
 		if(in != null)
 			return in;
 //		throw new IOException("Resource not found:" + resource);

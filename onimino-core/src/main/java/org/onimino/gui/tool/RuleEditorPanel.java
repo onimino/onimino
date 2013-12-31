@@ -1257,7 +1257,7 @@ public class RuleEditorPanel extends JPanel implements ActionListener {
 		String skindir = propConfig.getProperty("custom.skin.directory", "res");
 
 		int numBlocks = 0;
-		numBlocks = Zeroflections.getResources(Pattern.compile("^org/zeromeaner/res/graphics/blockskin/normal/n\\d+\\.png$")).size();
+		numBlocks = Zeroflections.getResources(Pattern.compile("^org/onimino/res/graphics/blockskin/normal/n\\d+\\.png$")).size();
 		
 		log.debug(numBlocks + " block skins found");
 
@@ -1303,7 +1303,7 @@ public class RuleEditorPanel extends JPanel implements ActionListener {
 	public URL getURL(String str) {
 		URL url = null;
 
-		url = RuleEditorPanel.class.getClassLoader().getResource("org/zeromeaner/" + str);
+		url = RuleEditorPanel.class.getClassLoader().getResource("org/onimino/" + str);
 
 		return url;
 	}

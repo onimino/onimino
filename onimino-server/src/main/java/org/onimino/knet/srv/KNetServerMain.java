@@ -60,7 +60,7 @@ public class KNetServerMain {
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			frame.setVisible(true);
 		}
-		PropertyConfigurator.configure(getClass().getClassLoader().getResourceAsStream("org/zeromeaner/config/etc/log_server.cfg"));
+		PropertyConfigurator.configure(getClass().getClassLoader().getResourceAsStream("org/onimino/config/etc/log_server.cfg"));
 		
 		log.debug("Starting zeromeaner server on port " + port + "...");
 		

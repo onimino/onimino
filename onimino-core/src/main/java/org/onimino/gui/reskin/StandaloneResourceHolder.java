@@ -295,7 +295,7 @@ public class StandaloneResourceHolder {
 	 */
 	public static URL getURL(String str) {
 		
-		URL url = StandaloneResourceHolder.class.getClassLoader().getResource("org/zeromeaner/" + str);
+		URL url = StandaloneResourceHolder.class.getClassLoader().getResource("org/onimino/" + str);
 		return url;
 		
 //		URL url = null;

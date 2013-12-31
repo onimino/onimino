@@ -11,7 +11,7 @@ public class RuleList extends ArrayFunctionalList<RuleOptions> {
 	public static RuleList getRules() {
 		RuleList ret = new RuleList();
 		for(String rule : Zeroflections.getRules()) {
-			rule = rule.replaceAll("^org/zeromeaner/", "");
+			rule = rule.replaceAll("^org/onimino/", "");
 			ret.add(GeneralUtil.loadRule(rule));
 		}
 		return ret;
@@ -20,7 +20,7 @@ public class RuleList extends ArrayFunctionalList<RuleOptions> {
 	public static Mapper<RuleOptions, String> RESOURCE_NAME = new AbstractMapper<RuleOptions, String>(RuleOptions.class, String.class) {
 		@Override
 		public String map0(RuleOptions key, Integer index) throws Exception {
-			return key.resourceName.replaceAll("^org/zeromeaner/", "");
+			return key.resourceName.replaceAll("^org/onimino/", "");
 		}
 	};
 	
