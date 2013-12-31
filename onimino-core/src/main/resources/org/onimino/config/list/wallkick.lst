@@ -1,0 +1,12 @@
+org.onimino.game.subsystem.wallkick.StandardWallkick
+org.onimino.game.subsystem.wallkick.StandardMild180Wallkick
+org.onimino.game.subsystem.wallkick.StandardSymmetricWallkick
+org.onimino.game.subsystem.wallkick.StandardSymmetricMild180Wallkick
+org.onimino.game.subsystem.wallkick.ClassicWallkick
+org.onimino.game.subsystem.wallkick.ClassicPlusWallkick
+org.onimino.game.subsystem.wallkick.DTETWallkick
+org.onimino.game.subsystem.wallkick.GBCWallkick
+org.onimino.game.subsystem.wallkick.WallOnlyWallkick
+org.onimino.game.subsystem.wallkick.AvalancheWallkick
+org.onimino.game.subsystem.wallkick.AvalancheClassicWallkick
+org.onimino.game.subsystem.wallkick.PhysicianWallkick

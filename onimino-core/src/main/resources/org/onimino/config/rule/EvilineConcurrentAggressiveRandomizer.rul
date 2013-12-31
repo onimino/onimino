@@ -1,0 +1,2 @@
+0.ruleopt.strRuleName=EVILINE FAST AGGRESSIVE
+0.ruleopt.strRandomizer=org.onimino.game.evil.TNConcurrentAggressiveRandomizer
