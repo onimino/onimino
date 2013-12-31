@@ -8,7 +8,6 @@
 
 	<modules>
 		<module>../onimino-core</module>
-		<module>../onimino-tuning</module>
 		<module>../onimino-media</module>
 		<module>../onimino-server</module>
 		<module>../onimino-netstats</module>
