@@ -277,7 +277,7 @@ public class MusicListEditor extends JFrame implements ActionListener {
 	private void saveMusicList() throws IOException {
 		try {
 			ResourceOutputStream out = new ResourceOutputStream("config/setting/music.cfg");
-			propMusic.store(out, "zeromeaner Music List");
+			propMusic.store(out, "onimino Music List");
 			out.close();
 		} catch (IOException e) {
 			log.error("Failed to save music list file", e);

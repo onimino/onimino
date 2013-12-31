@@ -56,14 +56,14 @@ public class StandaloneMain {
 	public static void saveConfig() {
 		try {
 			ResourceOutputStream out = new ResourceOutputStream("config/setting/global.cfg");
-			Options.GLOBAL_PROPERTIES.store(out, "zeromeaner global Config");
+			Options.GLOBAL_PROPERTIES.store(out, "onimino global Config");
 			out.close();
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
 		try {
 			ResourceOutputStream out = new ResourceOutputStream("config/setting/swing.cfg");
-			Options.GUI_PROPERTIES.store(out, "zeromeaner Swing-frontend Config");
+			Options.GUI_PROPERTIES.store(out, "onimino Swing-frontend Config");
 			out.close();
 		} catch(IOException e) {
 		}
@@ -79,7 +79,7 @@ public class StandaloneMain {
 		new File(System.getProperty("user.dir")).mkdirs();
 		CookieAccess.setInstance(new MainCookieAccess());
 
-		StandaloneApplet.url = new URL("http://www.nettromino.org/" + (GameManager.VERSION.isSnapshot() ? "snapshot" : "play") + "/");
+		StandaloneApplet.url = new URL("http://www.onimino.org/" + (GameManager.VERSION.isSnapshot() ? "snapshot" : "play") + "/");
 
 		userId = System.getProperty("user.name");
 		if(CookieAccess.get("userId") != null)

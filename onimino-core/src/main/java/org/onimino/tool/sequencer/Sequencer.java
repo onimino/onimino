@@ -73,7 +73,7 @@ import java.io.InputStreamReader;
 
 
 /**
- * zeromeaner Sequence Viewer (Original from NullpoUE build 010210 by Zircean)
+ * onimino Sequence Viewer (Original from NullpoUE build 010210 by Zircean)
  */
 public class Sequencer extends JFrame implements ActionListener {
 	/** Serial Version UID */
@@ -371,7 +371,7 @@ public class Sequencer extends JFrame implements ActionListener {
 	public void save(String filename) throws IOException {
 		log.info("Saving piece sequence file to " + filename);
 		BufferedWriter out = new BufferedWriter(new FileWriter(filename));
-		out.write("# zeromeaner Piece Sequence"); out.newLine();
+		out.write("# onimino Piece Sequence"); out.newLine();
 		out.write(txtareaSequence.getText());
 		out.close();
 	}

@@ -48,7 +48,7 @@ public class KNetServerMain {
 			System.setProperty("awt.useSystemAAFontSettings","on");
 			System.setProperty("swing.aatext", "true");
 
-			JFrame frame = new JFrame("zeromeaner server on port " + port);
+			JFrame frame = new JFrame("onimino server on port " + port);
 			frame.setLayout(new BorderLayout());
 			JTextArea ta = new JTextArea("");
 			ta.setEditable(false);
@@ -62,7 +62,7 @@ public class KNetServerMain {
 		}
 		PropertyConfigurator.configure(getClass().getClassLoader().getResourceAsStream("org/onimino/config/etc/log_server.cfg"));
 		
-		log.debug("Starting zeromeaner server on port " + port + "...");
+		log.debug("Starting onimino server on port " + port + "...");
 		
 		new KNetServer(port);
 	}

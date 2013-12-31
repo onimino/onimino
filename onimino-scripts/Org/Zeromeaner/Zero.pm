@@ -15,7 +15,7 @@ sub new {
 
 	$self->{dir} = $dir;
 
-	$self->{"log"} = Log::Log4perl->get_logger("org.zeromeaner.zero");
+	$self->{"log"} = Log::Log4perl->get_logger("org.onimino.zero");
 
 	return $self;
 }
@@ -26,7 +26,7 @@ sub dir {
 
 sub version {
 	my $self = shift;
-	my $pom = (new XML::Simple)->XMLin($self->{dir} . "zeromeaner-parent/pom.xml");
+	my $pom = (new XML::Simple)->XMLin($self->{dir} . "onimino-parent/pom.xml");
 	return $pom->{version};
 }
 
@@ -56,7 +56,7 @@ sub pull {
 
 sub mvn {
 	my $self = shift;
-	my %args = (module => "zeromeaner-parent");
+	my %args = (module => "onimino-parent");
 	if(ref $_[0]) {
 		%args = (%args, %{shift @_});
 	}

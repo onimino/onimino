@@ -1758,7 +1758,7 @@ public class PoochyBot extends AbstractAI implements Runnable {
 	/**
 	 * @deprecated
 	 * Workaround for the bug in Field.getHighestBlockY(int).
-	 * The bug has since been fixed as of zeromeaner v6.5, so
+	 * The bug has since been fixed as of onimino v6.5, so
 	 * fld.getHighestBlockY(x) should be equivalent.
 	 * @param fld Field
 	 * @param x X coord

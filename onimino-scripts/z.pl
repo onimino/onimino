@@ -36,10 +36,10 @@ foreach my $cmd (@ARGV) {
 		case "build" { $zero->mvn("clean", "install"); }
 		case "build-server" {
 			my $profile = $zero->is_snapshot ? "shade" : "shade-stable";
-			$zero->mvn({module => "zeromeaner-server"}, "package", "-P", $profile) 
+			$zero->mvn({module => "onimino-server"}, "package", "-P", $profile) 
 		}
 		case "run-server" {
-			open(LS, "ls " . $opt{dir} . "zeromeaner-server/target/*-all-*.jar|sort -V -r|");
+			open(LS, "ls " . $opt{dir} . "onimino-server/target/*-all-*.jar|sort -V -r|");
 			my $jar;
 			while($jar = <LS>) {
 				chomp $jar;

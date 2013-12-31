@@ -1521,7 +1521,7 @@ public class Field implements Serializable {
 
 	/**
 	 * Get the dan back
-	 * (from zeromeaner Unofficial Expansion build 091309)
+	 * (from onimino Unofficial Expansion build 091309)
 	 * @author Zircean
 	 * @return Dan back
 	 */

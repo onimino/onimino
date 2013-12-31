@@ -31,7 +31,7 @@ package org.onimino.gui.reskin;
 import org.onimino.util.Localization;
 
 /**
- * zeromeaner SwingVersion
+ * onimino SwingVersion
  */
 public class Localizations {
 	
