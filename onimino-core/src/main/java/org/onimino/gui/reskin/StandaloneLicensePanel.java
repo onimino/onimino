@@ -8,6 +8,8 @@ import javax.swing.JEditorPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
+import org.onimino.plaf.ZeroMetalTheme;
+
 public class StandaloneLicensePanel extends JPanel {
 	private JEditorPane editor;
 	
@@ -15,7 +17,7 @@ public class StandaloneLicensePanel extends JPanel {
 		super(new BorderLayout());
 		try {
 			editor = new JEditorPane(StandaloneLicensePanel.class.getClassLoader().getResource("org/onimino/About.html"));
-			editor.setBackground(new Color(0,128,0));
+			editor.setBackground(new ZeroMetalTheme().getSecondary3());
 			editor.setForeground(Color.WHITE);
 			editor.setEditable(false);
 			add(new JScrollPane(editor), BorderLayout.CENTER);
