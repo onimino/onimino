@@ -3,7 +3,8 @@ package org.onimino.tool.airankstool;
 import java.util.Random;
 
 import org.onimino.game.component.Piece;
-import org.onimino.game.randomizer.*;
+import org.onimino.game.randomizer.History4RollsRandomizer;
+import org.onimino.game.randomizer.Randomizer;
 import org.onimino.game.subsystem.ai.RanksAI;
 
 

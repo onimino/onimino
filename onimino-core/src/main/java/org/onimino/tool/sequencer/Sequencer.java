@@ -40,6 +40,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Locale;
 import java.util.Vector;
 
@@ -68,8 +69,6 @@ import org.onimino.game.component.Piece;
 import org.onimino.game.randomizer.Randomizer;
 import org.onimino.util.CustomProperties;
 import org.onimino.util.ResourceInputStream;
-
-import java.io.InputStreamReader;
 
 
 /**

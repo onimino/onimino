@@ -1,8 +1,11 @@
 package org.onimino.util;
 
-import org.onimino.util.PropertyConstant.Constant;
+import static org.onimino.util.PropertyConstant.BOOLEAN;
+import static org.onimino.util.PropertyConstant.DOUBLE;
+import static org.onimino.util.PropertyConstant.INTEGER;
+import static org.onimino.util.PropertyConstant.STRING;
 
-import static org.onimino.util.PropertyConstant.*;
+import org.onimino.util.PropertyConstant.Constant;
 
 public class Options {
 	public static final CustomProperties ROOT_PROPERTIES = new CustomProperties();

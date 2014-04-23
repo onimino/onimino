@@ -28,6 +28,8 @@
 */
 package org.onimino.gui.reskin;
 
+import static org.onimino.gui.reskin.Localizations.lz;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -53,10 +55,8 @@ import javax.swing.JTextField;
 import javax.swing.ListCellRenderer;
 
 import org.onimino.util.Options;
-import org.onimino.util.SwingUtils;
 import org.onimino.util.Options.TuningOptions;
-
-import static org.onimino.gui.reskin.Localizations.lz;
+import org.onimino.util.SwingUtils;
 
 /**
  * Tuning Settings screen frame

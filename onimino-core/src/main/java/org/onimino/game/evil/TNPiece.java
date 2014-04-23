@@ -1,7 +1,7 @@
 package org.onimino.game.evil;
 
-import org.eviline.Shape;
-import org.eviline.ShapeType;
+import org.eviline.core.Shape;
+import org.eviline.core.ShapeType;
 import org.onimino.game.component.Piece;
 
 public class TNPiece {

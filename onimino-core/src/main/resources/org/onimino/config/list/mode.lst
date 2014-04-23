@@ -1,7 +1,5 @@
 org.onimino.game.subsystem.mode.MarathonMode
 org.onimino.game.subsystem.mode.MarathonPlusMode
-org.onimino.game.evil.TNMode
-org.onimino.game.evil.TNNetVSBattleMode
 org.onimino.game.subsystem.mode.ExtremeMode
 org.onimino.game.subsystem.mode.LineRaceMode
 org.onimino.game.subsystem.mode.ScoreRaceMode

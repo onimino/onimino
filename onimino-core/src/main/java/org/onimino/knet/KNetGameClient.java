@@ -1,5 +1,19 @@
 package org.onimino.knet;
 
+import static org.onimino.knet.KNetEventArgs.ADDRESS;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_CHAT;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_ID;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_INFO;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_JOIN;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_LEAVE;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_LIST;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_SPECTATE;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_UPDATE;
+import static org.onimino.knet.KNetEventArgs.CONNECTED;
+import static org.onimino.knet.KNetEventArgs.GAME;
+import static org.onimino.knet.KNetEventArgs.MAPS;
+import static org.onimino.knet.KNetEventArgs.PAYLOAD;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,14 +21,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.funcish.core.Predicates;
 import org.funcish.core.fn.Predicate;
 import org.funcish.core.impl.AbstractPredicate;
+import org.funcish.core.util.Predicates;
 import org.mmmq.Topic;
 import org.onimino.game.component.Field;
 import org.onimino.knet.obj.KNetChannelInfo;
-
-import static org.onimino.knet.KNetEventArgs.*;
 
 public class KNetGameClient extends KNetClient implements KNetListener {
 	private final Predicate<KNetEvent> CHANNEL_LISTING = new AbstractPredicate<KNetEvent>(KNetEvent.class) {

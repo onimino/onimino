@@ -1,5 +1,11 @@
 package org.onimino.knet;
 
+import static org.onimino.knet.KNetEventArgs.ADDRESS;
+import static org.onimino.knet.KNetEventArgs.CONNECTED;
+import static org.onimino.knet.KNetEventArgs.DISCONNECTED;
+import static org.onimino.knet.KNetEventArgs.IN_REPLY_TO;
+import static org.onimino.knet.KNetEventArgs.UDP;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
@@ -16,8 +22,6 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
 import com.esotericsoftware.kryonet.Connection;
-
-import static org.onimino.knet.KNetEventArgs.*;
 
 public class KNetClient implements MessageListener, KNetListener {
 	private class KNetMasterClient extends MasterClient {

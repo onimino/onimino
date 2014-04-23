@@ -1,7 +1,7 @@
 package org.onimino.knet;
 
-import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 import org.onimino.game.component.Field;
 import org.onimino.game.component.Piece;

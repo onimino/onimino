@@ -28,6 +28,8 @@
 */
 package org.onimino.gui.reskin;
 
+import static org.onimino.gui.reskin.Localizations.lz;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -47,25 +49,12 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
-
-
-
-
-
-
-
-
-
 import org.apache.log4j.Logger;
 import org.onimino.game.subsystem.ai.AIPlayer;
 import org.onimino.game.subsystem.ai.AbstractAI;
-import org.onimino.util.CustomProperties;
 import org.onimino.util.Options;
-import org.onimino.util.Zeroflections;
 import org.onimino.util.Options.AIOptions;
-import org.onimino.util.Options.PlayerOptions;
-
-import static org.onimino.gui.reskin.Localizations.lz;
+import org.onimino.util.Zeroflections;
 
 /**
  * AISelection screen frame

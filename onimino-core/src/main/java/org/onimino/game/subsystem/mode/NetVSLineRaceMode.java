@@ -1,5 +1,9 @@
 package org.onimino.game.subsystem.mode;
 
+import static org.onimino.knet.KNetEventArgs.GAME_END_STATS;
+import static org.onimino.knet.KNetEventArgs.GAME_STATS;
+import static org.onimino.knet.KNetEventArgs.RACE_WIN;
+
 import org.onimino.game.component.Statistics;
 import org.onimino.game.event.EventRenderer;
 import org.onimino.game.play.GameEngine;
@@ -7,8 +11,6 @@ import org.onimino.game.play.GameManager;
 import org.onimino.knet.KNetEvent;
 import org.onimino.knet.obj.KNetGameInfo;
 import org.onimino.util.GeneralUtil;
-
-import static org.onimino.knet.KNetEventArgs.*;
 
 /**
  * NET-VS-LINE RACE mode

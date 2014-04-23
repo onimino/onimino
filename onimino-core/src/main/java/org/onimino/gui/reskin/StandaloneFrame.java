@@ -1,5 +1,7 @@
 package org.onimino.gui.reskin;
 
+import static org.onimino.util.Options.player;
+
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Dimension;
@@ -47,12 +49,10 @@ import org.onimino.util.CustomProperties;
 import org.onimino.util.GeneralUtil;
 import org.onimino.util.Localization;
 import org.onimino.util.Options;
-import org.onimino.util.ResourceFileSystemView;
-import org.onimino.util.ResourceInputStream;
 import org.onimino.util.Options.AIOptions;
 import org.onimino.util.Options.TuningOptions;
-
-import static org.onimino.util.Options.player;
+import org.onimino.util.ResourceFileSystemView;
+import org.onimino.util.ResourceInputStream;
 
 public class StandaloneFrame extends JFrame {
 	private static final Logger log = Logger.getLogger(StandaloneFrame.class);

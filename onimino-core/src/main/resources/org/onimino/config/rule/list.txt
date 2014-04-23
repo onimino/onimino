@@ -12,15 +12,6 @@ ClassicEasyB2.rul
 ClassicFast.rul
 ClassicS.rul
 DTET.rul
-EvilineAggressiveRandomizer.rul
-EvilineAngelRandomizer.rul
-EvilineBipolarRandomizer.rul
-EvilineConcurrentAggressiveRandomizer.rul
-EvilineConcurrentAngelRandomizer.rul
-EvilineConcurrentBipolarRandomizer.rul
-EvilineConcurrentRandomizer.rul
-EvilineNetplayRude.rul
-EvilineRandomizer.rul
 NintendoGBC.rul
 NintendoL.rul
 NintendoR.rul

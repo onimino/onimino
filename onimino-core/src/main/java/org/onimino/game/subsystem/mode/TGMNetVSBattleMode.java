@@ -1,5 +1,9 @@
 package org.onimino.game.subsystem.mode;
 
+import static org.onimino.knet.KNetEventArgs.CHANNEL_ID;
+import static org.onimino.knet.KNetEventArgs.GAME;
+import static org.onimino.knet.KNetEventArgs.TGMNETVSBATTLE_GAME_ATTACK;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
@@ -13,8 +17,6 @@ import org.onimino.knet.KNetEvent;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
-
-import static org.onimino.knet.KNetEventArgs.*;
 
 public class TGMNetVSBattleMode extends NetVSBattleMode {
 	@Override

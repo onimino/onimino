@@ -53,8 +53,6 @@ import javax.swing.JPopupMenu;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 
-
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.onimino.game.component.BGMStatus;

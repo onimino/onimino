@@ -30,8 +30,6 @@ package org.onimino.game.subsystem.mode;
 
 import java.util.Random;
 
-
-
 import org.apache.log4j.Logger;
 import org.onimino.game.component.BGMStatus;
 import org.onimino.game.component.Controller;

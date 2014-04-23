@@ -67,18 +67,6 @@ import javax.swing.JPanel;
 import javax.swing.event.InternalFrameAdapter;
 import javax.swing.event.InternalFrameEvent;
 
-
-
-
-
-
-
-
-
-
-
-
-
 import org.apache.log4j.Logger;
 import org.onimino.game.play.GameManager;
 import org.onimino.util.MusicList;

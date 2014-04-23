@@ -28,6 +28,8 @@
 */
 package org.onimino.gui.reskin;
 
+import static org.onimino.gui.reskin.Localizations.lz;
+
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.HeadlessException;
@@ -45,10 +47,8 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 import org.onimino.util.Options;
-import org.onimino.util.SwingUtils;
 import org.onimino.util.Options.StandaloneOptions;
-
-import static org.onimino.gui.reskin.Localizations.lz;
+import org.onimino.util.SwingUtils;
 
 /**
  * Setting screen frame

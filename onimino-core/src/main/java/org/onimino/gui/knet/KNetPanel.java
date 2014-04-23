@@ -1,5 +1,19 @@
 package org.onimino.gui.knet;
 
+import static org.onimino.knet.KNetEventArgs.CHANNEL_CHAT;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_CREATE;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_ID;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_JOIN;
+import static org.onimino.knet.KNetEventArgs.CHANNEL_LIST;
+import static org.onimino.knet.KNetEventArgs.CONNECTED;
+import static org.onimino.knet.KNetEventArgs.TIMESTAMP;
+import static org.onimino.knet.KNetEventArgs.UPDATE_SOURCE;
+import static org.onimino.knet.KNetEventArgs.USER_AUTHENTICATE;
+import static org.onimino.knet.KNetEventArgs.USER_AUTHENTICATED;
+import static org.onimino.knet.KNetEventArgs.USER_CREATE;
+import static org.onimino.knet.KNetEventArgs.USER_UPDATED_PASSWORD;
+import static org.onimino.knet.KNetEventArgs.USER_UPDATE_PASSWORD;
+
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -51,8 +65,6 @@ import org.onimino.knet.obj.KNetGameInfo;
 import org.onimino.util.EQInvoker;
 import org.onimino.util.Localization;
 import org.onimino.util.LstResourceMap;
-
-import static org.onimino.knet.KNetEventArgs.*;
 
 public class KNetPanel extends JPanel implements KNetChannelListener, KNetListener {
 	private static final Localization lz = new Localization();

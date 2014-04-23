@@ -28,6 +28,8 @@
 */
 package org.onimino.gui.reskin;
 
+import static org.onimino.gui.reskin.Localizations.lz;
+
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -47,8 +49,6 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 
 import org.onimino.util.Options;
-
-import static org.onimino.gui.reskin.Localizations.lz;
 
 /**
  * Key config frame

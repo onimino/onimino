@@ -1,5 +1,30 @@
 package org.onimino.game.subsystem.mode;
 
+import static org.onimino.knet.KNetEventArgs.AUTOSTART;
+import static org.onimino.knet.KNetEventArgs.AUTOSTART_BEGIN;
+import static org.onimino.knet.KNetEventArgs.AUTOSTART_STOP;
+import static org.onimino.knet.KNetEventArgs.CHANGE_STATUS;
+import static org.onimino.knet.KNetEventArgs.DEAD;
+import static org.onimino.knet.KNetEventArgs.DEAD_KO;
+import static org.onimino.knet.KNetEventArgs.DEAD_PLACE;
+import static org.onimino.knet.KNetEventArgs.FINISH;
+import static org.onimino.knet.KNetEventArgs.FINISH_WINNER;
+import static org.onimino.knet.KNetEventArgs.GAME;
+import static org.onimino.knet.KNetEventArgs.GAME_END_STATS;
+import static org.onimino.knet.KNetEventArgs.GAME_FIELD;
+import static org.onimino.knet.KNetEventArgs.GAME_NEXT_PIECE;
+import static org.onimino.knet.KNetEventArgs.GAME_PIECE_MOVEMENT;
+import static org.onimino.knet.KNetEventArgs.GAME_RESULTS_SCREEN;
+import static org.onimino.knet.KNetEventArgs.GAME_STATS;
+import static org.onimino.knet.KNetEventArgs.GAME_SYNCHRONOUS;
+import static org.onimino.knet.KNetEventArgs.GAME_SYNCHRONOUS_LOCKED;
+import static org.onimino.knet.KNetEventArgs.PLAYER_ENTER;
+import static org.onimino.knet.KNetEventArgs.PLAYER_LEAVE;
+import static org.onimino.knet.KNetEventArgs.PLAYER_LOGOUT;
+import static org.onimino.knet.KNetEventArgs.PLAYER_UPDATE;
+import static org.onimino.knet.KNetEventArgs.READY;
+import static org.onimino.knet.KNetEventArgs.START;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -21,8 +46,6 @@ import org.onimino.knet.obj.KNetChannelInfo;
 import org.onimino.knet.obj.KNetGameInfo;
 import org.onimino.knet.obj.KNetPlayerInfo;
 import org.onimino.util.GeneralUtil;
-
-import static org.onimino.knet.KNetEventArgs.*;
 
 /**
  * Special base class for netplay VS modes. Up to 6 players supported.

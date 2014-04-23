@@ -32,8 +32,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 
-
-
 import org.apache.log4j.Logger;
 import org.onimino.game.play.GameEngine;
 import org.onimino.util.CustomProperties;

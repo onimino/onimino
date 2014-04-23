@@ -6,7 +6,6 @@ import java.io.IOException;
 
 import javax.swing.JEditorPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 
 import org.onimino.plaf.ZeroMetalTheme;
 

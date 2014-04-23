@@ -18,8 +18,8 @@ import org.onimino.util.ModeList;
 import org.onimino.util.Options;
 import org.onimino.util.PropertyConstant;
 import org.onimino.util.ResourceInputStream;
-import org.onimino.util.ResourceOutputStream;
 import org.onimino.util.ResourceInputStream.ResourceDownloadStream;
+import org.onimino.util.ResourceOutputStream;
 
 public class StandaloneMain {
 	public static ModeList<GameMode> modeManager;

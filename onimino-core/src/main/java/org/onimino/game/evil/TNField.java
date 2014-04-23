@@ -1,75 +1,63 @@
 package org.onimino.game.evil;
 
-import org.eviline.Field;
-import org.eviline.randomizer.Randomizer;
-import org.eviline.randomizer.RandomizerFactory;
-import org.eviline.randomizer.RandomizerPresets;
+import org.eviline.core.Engine;
+import org.eviline.core.Field;
+import org.eviline.core.Shape;
+import org.eviline.core.ShapeType;
+import org.eviline.core.XYShape;
+import org.eviline.core.ss.EvilBag7NShapeSource;
 import org.onimino.game.component.Block;
 import org.onimino.game.play.GameEngine;
+import org.onimino.game.randomizer.Randomizer;
 
-public class TNField extends Field {
+public class TNField extends Engine {
 	
 	protected GameEngine engine;
 	
 	public TNField(GameEngine engine) {
 		super();
 		this.engine = engine;
-//		MaliciousRandomizerProperties mp = new MaliciousRandomizerProperties(3, 0, false, 30);
-//		ThreadedMaliciousRandomizer r = new ThreadedMaliciousRandomizer(mp);
-		Randomizer r = new RandomizerFactory().newRandomizer(RandomizerPresets.EVIL);
-		// FIXME be able to set the random
-//		r.setRandom(engine.random);
-		provider = r;
+		shapes = new EvilBag7NShapeSource();
 	}
 	
-	public void update() {
+	public void update(int lookahead) {
 		if(engine.field == null)
 			return;
-		for(int y = 0; y < BUFFER; y++) {
-			for(int x = BUFFER;  x < BUFFER + WIDTH; x++)
-				field[y][x] = null;
-		}
-		for(int y = 0; y < 20; y++) {
-			for(int x = 0; x < 10; x++) {
+		for(int y = -4; y < Field.HEIGHT; y++) {
+			for(int x = 0; x < Field.WIDTH; x++) {
 				org.onimino.game.component.Block npblock = engine.field.getBlock(x, y);
-//				field[y + BUFFER][x + BUFFER] = npblock.color == 0 ? null : Block.values()[npblock.color];
-				org.eviline.Block b = null;
-				switch(npblock.color) {
-				case Block.BLOCK_COLOR_NONE: b = null; break;
-				case Block.BLOCK_COLOR_YELLOW: b = org.eviline.Block.O; break;
-				case Block.BLOCK_COLOR_CYAN: b = org.eviline.Block.I; break;
-				case Block.BLOCK_COLOR_GREEN: b = org.eviline.Block.S; break;
-				case Block.BLOCK_COLOR_BLUE: b = org.eviline.Block.J; break;
-				case Block.BLOCK_COLOR_PURPLE: b = org.eviline.Block.T; break;
-				case Block.BLOCK_COLOR_RED: b = org.eviline.Block.Z; break;
-				case Block.BLOCK_COLOR_ORANGE: b = org.eviline.Block.L; break;
-				default:
-					b = org.eviline.Block.X;
+				ShapeType b = null;
+				if(npblock != null) {
+					switch(npblock.color) {
+					case Block.BLOCK_COLOR_NONE: b = null; break;
+					case Block.BLOCK_COLOR_YELLOW: b = ShapeType.O; break;
+					case Block.BLOCK_COLOR_CYAN: b = ShapeType.I; break;
+					case Block.BLOCK_COLOR_GREEN: b = ShapeType.S; break;
+					case Block.BLOCK_COLOR_BLUE: b = ShapeType.J; break;
+					case Block.BLOCK_COLOR_PURPLE: b = ShapeType.T; break;
+					case Block.BLOCK_COLOR_RED: b = ShapeType.Z; break;
+					case Block.BLOCK_COLOR_ORANGE: b = ShapeType.L; break;
+					default:
+						b = ShapeType.G;
+					}
+					if(npblock.getAttribute(Block.BLOCK_ATTRIBUTE_GARBAGE))
+						b = ShapeType.G;
 				}
-				if(npblock.getAttribute(Block.BLOCK_ATTRIBUTE_GARBAGE))
-					b = org.eviline.Block.GARBAGE;
-				field[y + BUFFER][x + BUFFER] = b;
+				if(b != null)
+					field.setBlock(x, y, new org.eviline.core.Block(b));
+				else
+					field.setBlock(x, y, null);
 			}
+		}
+		
+		next = new ShapeType[Math.min(engine.nextPieceArraySize, lookahead)];
+		for(int i = 0; i < next.length; i++) {
+			next[i] = TNPiece.fromNullpo(engine.getNextID(engine.nextPieceCount + i));
 		}
 	}
 	
 	public void updateShape() {
-		shape = TNPiece.fromNullpo(engine.nowPieceObject);
-		shapeX = BUFFER + engine.nowPieceX;
-		shapeY = BUFFER + engine.nowPieceY;
-		
-//		switch(shape) {
-//		case S_LEFT: shapeX--; break;
-//		case S_RIGHT: shapeX--; break;
-//		case J_LEFT: shapeX--; break;
-//		case L_DOWN: shapeX--; break;
-//		case O_UP: shapeX--; break;
-//		case Z_LEFT: shapeX--; break;
-//		}
-		
-	}
-	
-	public Object writeReplace() {
-		return copyInto(new Field());
+		Shape nps = TNPiece.fromNullpo(engine.nowPieceObject);
+		shape = new XYShape(nps, engine.nowPieceX, engine.nowPieceY);
 	}
 }

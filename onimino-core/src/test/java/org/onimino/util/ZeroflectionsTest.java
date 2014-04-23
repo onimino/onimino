@@ -2,7 +2,6 @@ package org.onimino.util;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.onimino.util.Zeroflections;
 
 public class ZeroflectionsTest {
 	@Test

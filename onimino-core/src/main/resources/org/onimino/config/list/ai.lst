@@ -6,10 +6,4 @@ org.onimino.game.subsystem.ai.RanksAI
 org.onimino.game.subsystem.ai.Nohoho
 org.onimino.game.subsystem.ai.ComboRaceBot
 org.onimino.game.evil.TNBot
-org.onimino.game.evil.TNBot$Race
-org.onimino.game.evil.TNBot$Lander
-org.onimino.game.evil.TNBot$SlowRace
 org.onimino.game.evil.TNBot$Dig
-org.onimino.game.evil.TNBot$Clairevoyant
-org.onimino.game.evil.TNElTetrisBot
-org.onimino.game.evil.TNElTetrisBot$Race

@@ -1,10 +1,9 @@
 package org.onimino.util;
 
+import static org.onimino.util.Localization.lz;
+
 import org.junit.Assert;
 import org.junit.Test;
-import org.onimino.util.Localization;
-
-import static org.onimino.util.Localization.*;
 
 public class LocalizationTest {
 	private static Localization lz = new Localization();

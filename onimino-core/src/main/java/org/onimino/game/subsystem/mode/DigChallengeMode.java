@@ -1,5 +1,10 @@
 package org.onimino.game.subsystem.mode;
 
+import static org.onimino.knet.KNetEventArgs.GAME_END_STATS;
+import static org.onimino.knet.KNetEventArgs.GAME_OPTIONS;
+import static org.onimino.knet.KNetEventArgs.GAME_STATS;
+import static org.onimino.knet.KNetEventArgs.START_1P;
+
 import java.util.concurrent.TimeUnit;
 
 import org.onimino.game.component.BGMStatus;
@@ -14,8 +19,6 @@ import org.onimino.game.play.GameEngine;
 import org.onimino.knet.KNetEvent;
 import org.onimino.util.CustomProperties;
 import org.onimino.util.GeneralUtil;
-
-import static org.onimino.knet.KNetEventArgs.*;
 
 /**
  * DIG CHALLENGE mode

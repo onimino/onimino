@@ -26,8 +26,8 @@ import org.onimino.util.CustomProperties;
 import org.onimino.util.LstResourceMap;
 import org.onimino.util.ModeList;
 import org.onimino.util.Options;
-import org.onimino.util.RuleList;
 import org.onimino.util.ResourceInputStream.ResourceDownloadStream;
+import org.onimino.util.RuleList;
 
 public class StandaloneModeselectPanel extends JPanel {
 	private static String formatButtonText(String modeOrRuleName) {

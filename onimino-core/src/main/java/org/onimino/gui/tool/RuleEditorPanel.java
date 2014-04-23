@@ -43,6 +43,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.Collections;
 import java.util.Vector;
@@ -66,20 +67,10 @@ import javax.swing.JTextField;
 import javax.swing.ListCellRenderer;
 import javax.swing.filechooser.FileFilter;
 
-
-
-
-
-
-
-
-
-
-
 import org.apache.commons.codec.binary.Base64InputStream;
 import org.apache.commons.codec.binary.Base64OutputStream;
 import org.apache.log4j.Logger;
-import org.funcish.core.Mappings;
+import org.funcish.core.util.Mappings;
 import org.onimino.game.component.Block;
 import org.onimino.game.component.Piece;
 import org.onimino.game.component.RuleOptions;
@@ -95,8 +86,6 @@ import org.onimino.util.Zeroflections;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
-
-import java.io.InputStreamReader;
 
 /**
  * Rule Editor
@@ -593,7 +582,7 @@ public class RuleEditorPanel extends JPanel implements ActionListener {
 		pRandomizer.add(lRandomizer);
 
 //		vectorRandomizer = getTextFileVector("config/list/randomizer.lst");
-		vectorRandomizer = new Vector<String>(Mappings.classSimpleName().map(Zeroflections.getRandomizers()));
+		vectorRandomizer = Mappings.classSimpleName().map(Zeroflections.getRandomizers()).into(new Vector<String>());
 		Collections.sort(vectorRandomizer);
 		comboboxRandomizer = new JComboBox(createShortStringVector(vectorRandomizer));
 		comboboxRandomizer.setPreferredSize(new Dimension(200, 30));
